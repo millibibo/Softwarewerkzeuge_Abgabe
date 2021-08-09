@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tvChooseLittle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3C0CB8CD"
+    tools:context=".ui.main.LittleFragment">
+
+    <TextView
+        android:id="@+id/tvLittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/comfortaa"
+        android:text="@string/choose"
+        android:textColor="#131837"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bnLittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:onClick="bn_GoToThirdLittle"
+        android:text="@string/button"
+        app:backgroundTint="#4CAF50"
+        app:layout_constraintStart_toStartOf="@+id/spLittle"
+        app:layout_constraintTop_toBottomOf="@+id/spLittle" />
+
+    <Spinner
+        android:id="@+id/spLittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toEndOf="@+id/tvCountryLittle"
+        app:layout_constraintTop_toBottomOf="@+id/tvLittle" />
+
+    <TextView
+        android:id="@+id/tvCountryLittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/comfortaa"
+        android:text="Country"
+        app:layout_constraintStart_toStartOf="@+id/tvLittle"
+        app:layout_constraintTop_toBottomOf="@+id/tvLittle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

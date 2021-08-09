@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3C0CB8CD"
+    tools:context=".MainActivity">
+
+    <!--Überschrift-->
+    <TextView
+        android:id="@+id/tvAnimals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/finger_paint"
+        android:text="@string/header"
+        android:textColor="#EA004F"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Text 1-->
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/comfortaa"
+        android:text="@string/welcome"
+        android:textColor="#131837"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAnimals" />
+
+    <!--Text 2-->
+    <TextView
+        android:id="@+id/tvWelcome1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/comfortaa"
+        android:text="@string/welcome1"
+        android:textColor="#131837"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWelcome" />
+
+    <!--Text 3-->
+    <TextView
+        android:id="@+id/tvWelcome3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/comfortaa"
+        android:text="@string/welcome2"
+        app:layout_constraintStart_toStartOf="@+id/tvWelcome1"
+        app:layout_constraintTop_toBottomOf="@+id/tvWelcome1" />
+
+    <!--Countries Überschrift-->
+    <TextView
+        android:id="@+id/tvAnimalList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/comfortaa"
+        android:text="@string/mainCountries"
+        app:layout_constraintStart_toStartOf="@+id/tvWelcome1"
+        app:layout_constraintTop_toBottomOf="@+id/tvWelcome1" />
+
+    <!--Spinner (DropdownMenu mit Ländern)-->
+    <Spinner
+        android:id="@+id/spCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:entries="@array/countries_arrays"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvAnimalList"
+        app:layout_constraintStart_toEndOf="@+id/tvAnimalList" />
+
+    <!--Bestätigungsbutton-->
+    <Button
+        android:id="@+id/bnGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:onClick="bn_GoToTabbed"
+        android:text="@string/button"
+        app:backgroundTint="#4CAF50"
+        app:layout_constraintStart_toStartOf="@+id/spCountry"
+        app:layout_constraintTop_toBottomOf="@+id/spCountry" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

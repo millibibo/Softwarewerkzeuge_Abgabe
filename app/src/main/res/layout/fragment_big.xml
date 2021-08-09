@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tvChooseBig"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3C0CB8CD"
+    tools:context=".ui.main.BigFragment">
+
+    <TextView
+        android:id="@+id/tvBig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/comfortaa"
+        android:text="@string/choose"
+        android:textColor="#131837"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bnBig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:onClick="bn_GoToThirdBig"
+        android:text="@string/button"
+        app:backgroundTint="#4CAF50"
+        app:layout_constraintStart_toStartOf="@+id/spBig"
+        app:layout_constraintTop_toBottomOf="@+id/spBig" />
+
+    <Spinner
+        android:id="@+id/spBig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toEndOf="@+id/tvCountryBig"
+        app:layout_constraintTop_toBottomOf="@+id/tvBig" />
+
+    <TextView
+        android:id="@+id/tvCountryBig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/comfortaa"
+        android:text="Country"
+        app:layout_constraintStart_toStartOf="@+id/tvBig"
+        app:layout_constraintTop_toBottomOf="@+id/tvBig" />
+</androidx.constraintlayout.widget.ConstraintLayout>

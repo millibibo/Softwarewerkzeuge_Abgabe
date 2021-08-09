@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3C0CB8CD"
+    tools:context=".ThirdActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/comfortaa"
+        android:text="@string/titleThird"
+        android:textColor="#131837"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/empty" />
+
+    <TextView
+        android:id="@+id/tvAnimalName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/comfortaa"
+        android:text="@string/thirdName"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/image" />
+
+    <TextView
+        android:id="@+id/tvAnimalColour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/comfortaa"
+        android:text="@string/thirdColour"
+        app:layout_constraintStart_toStartOf="@+id/tvAnimalName"
+        app:layout_constraintTop_toBottomOf="@+id/tvAnimalName" />
+
+    <TextView
+        android:id="@+id/tvAnimalCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/comfortaa"
+        android:text="@string/thirdCountry"
+        app:layout_constraintStart_toStartOf="@+id/tvAnimalName"
+        app:layout_constraintTop_toBottomOf="@+id/tvAnimalColour" />
+
+    <TextView
+        android:id="@+id/tvAnimalInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/comfortaa"
+        android:text="@string/thirdInfo"
+        app:layout_constraintStart_toStartOf="@+id/tvAnimalName"
+        app:layout_constraintTop_toBottomOf="@+id/tvAnimalCountry" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/comfortaa"
+        android:text="tvName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvAnimalName"
+        app:layout_constraintStart_toEndOf="@+id/tvAnimalName" />
+
+    <TextView
+        android:id="@+id/tvColour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comfortaa"
+        android:text="tvColour"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvAnimalColour"
+        app:layout_constraintStart_toStartOf="@+id/tvName" />
+
+    <TextView
+        android:id="@+id/tvCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comfortaa"
+        android:text="tvCountry"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvAnimalCountry"
+        app:layout_constraintStart_toStartOf="@+id/tvName" />
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comfortaa"
+        android:text="tvInfo"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvAnimalInformation"
+        app:layout_constraintStart_toStartOf="@+id/tvName" />
+</androidx.constraintlayout.widget.ConstraintLayout>

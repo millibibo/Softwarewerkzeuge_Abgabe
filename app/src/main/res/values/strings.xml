@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Semesteraufgabe</string>
+
+    <string name="header">ANIMALS</string>
+
+    <string name="welcome">Welcome to your animal information platform!</string>
+    <string name="welcome1">We hope you can find the perfect little cutie!</string>
+    <string name="welcome2">Please select a country.</string>
+
+    <string name="button">GO!</string>
+
+    <string name="mainCountries">Countries:</string>
+
+
+    <string-array name="countries_arrays">
+        <item>Germany</item>
+        <item>USA</item>
+        <item>Australia</item>
+        <item>Canada</item>
+    </string-array>
+
+
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+    <string name="tab_little">Little</string>
+    <string name="tab_middle">Middle</string>
+    <string name="tab_big">Big</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_tabbed">TabbedActivity</string>
+
+    <string name="choose">Please choose your animal.</string>
+
+    <string name="title_activity_third">ThirdActivity</string>
+
+    <string name="titleThird">Here´re some information about your chosen animal:</string>
+
+    <string name="thirdName">Name of Animal:</string>
+    <string name="thirdColour">Colour:</string>
+    <string name="thirdCountry">Country:</string>
+    <string name="thirdInfo">Information:</string>
+
+
+
+</resources>
