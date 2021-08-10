@@ -11,6 +11,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,6 +29,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MiddleFragment extends Fragment {
+
+    String LOGCAT = "MiddleFragment";
 
     //Attribute
     private TextView countryMiddle = null;
@@ -73,6 +76,7 @@ public class MiddleFragment extends Fragment {
         //Spinner (Dropdown-Menu) mit entsprechenden Tiernamen
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_spinner_item, animalListMiddle);
         spinnerMiddle.setAdapter(dataAdapter);
+        Log.i(LOGCAT, "Spinner Middle");
 
         return view;
     }

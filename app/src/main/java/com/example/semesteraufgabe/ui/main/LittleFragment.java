@@ -11,6 +11,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,6 +30,8 @@ import java.util.List;
 
 
 public class LittleFragment extends Fragment {
+
+    String LOGCAT = "LittleFragment";
 
     //Attribute
     private TextView countryLittle = null;
@@ -74,6 +77,7 @@ public class LittleFragment extends Fragment {
         //Spinner (Dropdown-Menu) mit entsprechenden Tiernamen
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_spinner_item, animalListLittle);
         spinnerLittle.setAdapter(dataAdapter);
+        Log.i(LOGCAT, "Spinner Little");
 
         return view;
     }

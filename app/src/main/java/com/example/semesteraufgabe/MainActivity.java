@@ -10,15 +10,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Spinner;
 
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
     //Attribute
     public static final String TAG = "Animals";
+    String LOGCAT = "MainActivity";
     private static Spinner country = null;
 
     /**
@@ -30,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         country = findViewById(R.id.spCountry);
+        Log.i(LOGCAT, "MainActivity OnCreate");
+
     }
 
     /**

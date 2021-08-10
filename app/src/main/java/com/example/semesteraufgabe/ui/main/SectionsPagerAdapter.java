@@ -23,6 +23,8 @@ import com.example.semesteraufgabe.R;
  */
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
+    String LOGTAG = "SectionPageAdapter";
+
     //Tabs
     @StringRes
     private static final int[] TAB_TITLES = new int[]{
@@ -46,15 +48,15 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         switch (position) {
             case 0:
                 LittleFragment fragmentlittle = new LittleFragment();
-                Log.i("+++++++++++++++++++++++++++SectionAdapter, getItem", "LittleFragment");
+                Log.i(LOGTAG, "LittleFragment erstellt");
                 return fragmentlittle;
             case 1:
                 MiddleFragment fragmentmiddle = new MiddleFragment();
-                Log.i("+++++++++++++++++++++++++++SectionAdapter, getItem", "MiddleFragment");
+                Log.i(LOGTAG, "MiddleFragment erstellt");
                 return fragmentmiddle;
             case 2:
                 BigFragment fragmentbig = new BigFragment();
-                Log.i("+++++++++++++++++++++++++++SectionAdapter, getItem", "BigFragment");
+                Log.i(LOGTAG, "BigFragment erstellt");
                 return fragmentbig;
             default: return null;
         } // switch
