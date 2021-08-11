@@ -1,6 +1,5 @@
 package com.example.semesteraufgabe;
 
-
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -44,5 +43,4 @@ class TestenTest {
         String animalMethod = testen.animal(test.getAnimal());
         assertEquals(animalExpected, animalMethod);
     }
-
 }

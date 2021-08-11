@@ -53,7 +53,5 @@ public class ThirdActivityLittle extends AppCompatActivity {
                 info.setText(a.info);
             }
         }
-
     }
-
 }

@@ -28,7 +28,6 @@ import com.example.semesteraufgabe.ThirdActivity;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class LittleFragment extends Fragment {
 
     String LOGCAT = "LittleFragment";

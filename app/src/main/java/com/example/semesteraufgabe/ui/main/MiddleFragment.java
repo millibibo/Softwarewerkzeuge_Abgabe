@@ -5,7 +5,6 @@ package com.example.semesteraufgabe.ui.main;
  * SS21
  * @author Philine Hörnemann (m28064)
  */
-
 import android.content.Intent;
 import android.os.Bundle;
 

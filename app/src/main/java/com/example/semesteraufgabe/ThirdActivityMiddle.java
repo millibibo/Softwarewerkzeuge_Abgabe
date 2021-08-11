@@ -57,6 +57,5 @@ public class ThirdActivityMiddle extends AppCompatActivity {
                 info.setText(a.info);
             }
         }
-
     }
 }

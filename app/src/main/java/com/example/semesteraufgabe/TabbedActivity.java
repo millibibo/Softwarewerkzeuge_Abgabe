@@ -72,6 +72,4 @@ public class TabbedActivity extends AppCompatActivity {
         int sendenr=1;
         startActivityForResult(intent, sendenr); //es fehlt die Rückgabe
     }
-
-
 }

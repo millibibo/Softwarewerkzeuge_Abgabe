@@ -64,5 +64,4 @@ public class Animallist {
 
         return liste;
     }
-
 }

@@ -37,7 +37,6 @@ public class Testen {
         }
     }
 
-
     String name = "";
     String colour = "";
     String country = "";

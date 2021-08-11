@@ -57,7 +57,4 @@ public class MainActivity extends AppCompatActivity {
         String sCountry = (String) country.getSelectedItem();
         return sCountry;
     }
-
-
-
 }

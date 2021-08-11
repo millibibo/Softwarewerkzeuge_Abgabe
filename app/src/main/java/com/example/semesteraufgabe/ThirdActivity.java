@@ -21,7 +21,6 @@ import java.util.List;
 
 public class ThirdActivity extends AppCompatActivity {
 
-
     //Attribute
     private ImageView image = null;
     private TextView name = null;

@@ -100,6 +100,4 @@ public class BigFragment extends Fragment {
         String sName = (String) spinnerBig.getSelectedItem();
         return sName;
     }
-
-
 }
