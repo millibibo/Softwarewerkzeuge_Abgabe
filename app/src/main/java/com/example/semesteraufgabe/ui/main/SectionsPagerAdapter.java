@@ -82,4 +82,9 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         return TAB_TITLES.length;
     }
 
+
+    public static int count() {
+        return  TAB_TITLES.length;
+    }
+
 }
